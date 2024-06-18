@@ -5,14 +5,14 @@
 
 
 :root {
-  --main-font: IBM Plex Mono ;
+  --main-font: IBM Plex Mono , sans-serif;
   --bg-color: #000028;
   --bg-pink-color: var(--accent-color-text);
   --text-color:  #F1B2CE;
   --accent-color-text:  #FF0070;
   --color-text-subtitle: #000028;
   --text-color-title: #DB00FF;
-  --bg-image: url(images/cover-image-dark.png);
+  --bg-image: url(../images/cover-image-dark.png);
   --text-shadow-color: var(--accent-color-text);
   --border-neon: 1px solid var(--accent-color-text);
   --border-hover: 1px solid #32312D66;

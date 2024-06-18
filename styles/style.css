@@ -5,7 +5,7 @@
   margin: 0 auto;
   background-image: var(--bg-image);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   font-size: 18px;
@@ -21,6 +21,13 @@
   grid-template-rows: auto max-content auto;
 }
 
+@media (min-width: 1024px) {
+  .header {
+    display: grid;
+    grid-template-rows: 1fr min-content 1fr;
+  }
+}
+
 .header__rec {
   position: absolute;
   display: var(--display);
@@ -31,21 +38,23 @@
   inset-inline-end: 0;
   inset-block-start: 0;
   cursor: default;
+  text-transform: uppercase;
 }
 
 .header__rec::after {
   content: "";
   display: block;
   border-radius: 50%;
-  box-shadow: 0 0 5px 4px var(--text-shadow-color);
+  box-shadow: 0 0 4px 2px var(--text-shadow-color);
   background-color: var(--bg-pink-color);
-  inline-size: 7px;
-  block-size: 7px;
+  inline-size: 9px;
+  block-size: 9px;
 }
 
 .decorated-zone {
   position: relative;
-  min-block-size: 97vh;
+  min-block-size: 100vh;
+  min-height: 668px;
 }
 
 @media (min-width: 768px) {
@@ -93,7 +102,6 @@
       margin: 10px 0 0;
       align-items: center;
       padding-block-start: 29px;
-      margin-inline-end: -2px;
   }
 }
 
@@ -138,6 +146,16 @@
   border: var(--border-neon);
 }
 
+.header__theme-menu-item {
+  inline-size: 70px;
+  block-size: 26px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
 button:focus {
   outline: none;
 }
@@ -175,7 +193,7 @@ button:hover {
       font-size: var(--font-size-dekstop);
       line-height: 99px;
       text-align: left;
-      margin: -25px 0 0 -20px;
+      
   }
 }
 
@@ -183,6 +201,8 @@ button:hover {
   .header__title-shadow {
       font-size: var(--font-size-dekstop);
       line-height: 129.53px;
+      display: block;
+      justify-self: start;
   }
 }
 
@@ -349,7 +369,7 @@ a:hover {
   border-bottom: var(--underline-hover);
 }
 
-.title__two {
+.title  {
   margin-block-start: 20px;
   font-family: var(--main-font);
   font-size: 18px;
@@ -358,7 +378,7 @@ a:hover {
 }
 
 @media (min-width: 1024px) {
-  .title__two {
+  .title {
       margin: 0;
   }
 }
