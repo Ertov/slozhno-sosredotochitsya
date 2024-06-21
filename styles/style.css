@@ -1,8 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  padding: 10px;
   margin: 0 auto;
+  padding: 10px;
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
@@ -31,7 +31,7 @@
 @media (min-width: 1024px) {
   .header {
     display: grid;
-    grid-template-rows: 1fr min-content 1fr;
+    grid-template-rows: 2.63fr min-content 1fr;
   }
 }
 
@@ -60,7 +60,7 @@
 
 .decorated-zone {
   position: relative;
-  min-block-size: 97vh;
+  block-size: 100%;
 }
 
 @media (min-width: 768px) {
@@ -105,7 +105,7 @@
 
 @media (min-width: 768px) {
   .header__theme-menu {
-      margin: 35px 0 0;
+      margin: 28px 0 0;
       align-items: center;
       padding-block-start: 29px;
   }
@@ -151,6 +151,9 @@
 .header__theme-menu-button_type_dark {
   border: var(--border-neon);
   padding-block-start: 2px;
+  padding-inline-start: 11px;
+  padding-inline-end: 13px;
+  padding-block-end: 4px;
 }
 
 .header__theme-menu-item {
@@ -175,6 +178,10 @@ button:focus-visible {
 button:hover {
   border: var(--border-hover);
   cursor: pointer;
+  width: 70px;
+  height: 26px;
+  padding: 0px 13px 0px 13px;
+  border: 1px 0px 0px 0px;  
 }
 
 .header__title {
@@ -183,7 +190,7 @@ button:hover {
 
 @media (min-width: 1024px) {
   .header__title {
-      margin-block-start: 185px;
+      margin-block-start: 0;
   }
 }
 
@@ -240,7 +247,13 @@ button:hover {
 
 @media (min-width: 768px) {
   .main__block {
-      margin-block-start: 84px;
+      margin-block-start: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main__block {
+      margin-block-start: 81px;
   }
 }
 
@@ -248,7 +261,7 @@ button:hover {
   font-family: var(--main-font);
   font-size: 18px;
   color: var(--accent-color-text);
-  margin-block-start: 50px;
+  margin-block-start: 52px;
 }
 
 @media (min-width: 768px) {
@@ -410,7 +423,7 @@ a:hover {
 }
 
 .two__content {
-  margin-block-start: 11px;
+  margin-block-start: 10px;
   font-family: var(--main-font);
 font-size: 18px;
 font-weight: 400;
@@ -441,7 +454,13 @@ line-height: 23.4px;
 
 @media (min-width: 768px) {
   .title__three {
-      margin-block-start: 19px;
+      margin-block-start: 21px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title__three {
+      margin-block-start: 21px;
   }
 }
 
@@ -489,8 +508,15 @@ line-height: 23.4px;
 
 @media (min-width: 768px) {
 section:nth-of-type(4) { 
-    margin-block-start: 80px; }
+    margin-block-start: 80px; 
+  }
 }
+
+@media (min-width: 1024px) {
+  section:nth-of-type(4) { 
+      margin-block-start: 79px; 
+    }
+  }
 
 /* footer */
 
