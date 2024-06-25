@@ -18,7 +18,7 @@
   --text-shadow-color: var(--accent-color-text);
   --border-neon: 1px solid var(--accent-color-text);
   --title-shadow: 4px 4px 0px 0px var(--accent-color-text);
-  --border-hover: 1px solid #32312D66;
+  --border-hover: 1px solid #FF007066;
   --underline-hover: 1px solid var(--text-color);
   --focus-line: 1px solid var(--accent-color-text);
   --font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);

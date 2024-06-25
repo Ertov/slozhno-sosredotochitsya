@@ -23,15 +23,15 @@
 
 @media (min-width: 768px) {
   .header {
-    display: grid;
-    grid-template-rows: 2.34fr min-content 1fr;
+      display: grid;
+      grid-template-rows: 2.34fr min-content 1fr;
   }
 }
 
 @media (min-width: 1024px) {
   .header {
-    display: grid;
-    grid-template-rows: 2.63fr min-content 1fr;
+      display: grid;
+      grid-template-rows: 2.63fr min-content 1fr;
   }
 }
 
@@ -181,7 +181,6 @@ button:hover {
   width: 70px;
   height: 26px;
   padding: 0px 13px 0px 13px;
-  border: 1px 0px 0px 0px;  
 }
 
 .header__title {
@@ -370,12 +369,11 @@ button:hover {
 }
 
 .main__content-paragraf {
-margin-block-start: 10px;
-font-family: var(--main-font);
-font-size: 18px;
-font-weight: 400;
-line-height: 23.4px;
-
+  margin-block-start: 10px;
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
 }
 
 .shadow-text {
@@ -403,31 +401,30 @@ a:hover {
   background-color: var(--bg-pink-color);
 }
 
-
 @media (min-width: 768px) {
   .title {
-    margin-block-start: 20px;
+      margin-block-start: 20px;
   }
 }
 
 @media (min-width: 1024px) {
   .title {
-    margin-block-start: 0px;
+      margin-block-start: 0px;
   }
 }
 
 @media (min-width: 1024px) {
   .title.dopamine {
-    margin-block-start: 20px;
+      margin-block-start: 20px;
   }
 }
 
 .two__content {
   margin-block-start: 10px;
   font-family: var(--main-font);
-font-size: 18px;
-font-weight: 400;
-line-height: 23.4px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
 }
 
 .main__subtitle-text-main__subtitle-text-two {
@@ -507,16 +504,16 @@ line-height: 23.4px;
 }
 
 @media (min-width: 768px) {
-section:nth-of-type(4) { 
-    margin-block-start: 80px; 
+  section:nth-of-type(4) {
+      margin-block-start: 80px;
   }
 }
 
 @media (min-width: 1024px) {
-  section:nth-of-type(4) { 
-      margin-block-start: 79px; 
-    }
+  section:nth-of-type(4) {
+      margin-block-start: 79px;
   }
+}
 
 /* footer */
 
@@ -526,9 +523,10 @@ section:nth-of-type(4) {
 }
 
 @media (min-width: 768px) {
-  .footer { 
-      margin-block-start: 65px; }
+  .footer {
+      margin-block-start: 65px;
   }
+}
 
 .footer__title-shadow {
   justify-self: center;
@@ -542,6 +540,6 @@ section:nth-of-type(4) {
 
 @media (min-width: 1024px) {
   .footer__title-shadow {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+      font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
