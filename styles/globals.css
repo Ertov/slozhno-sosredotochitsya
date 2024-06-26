@@ -20,6 +20,8 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   block-size: 100%;
+  line-height: 23.4px;
+  text-align: left;
 }
 
 h1,

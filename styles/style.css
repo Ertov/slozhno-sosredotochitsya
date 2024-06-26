@@ -18,20 +18,23 @@
 }
 .header {
   display: grid;
-  grid-template-rows: 2.9fr min-content 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
   .header {
       display: grid;
-      grid-template-rows: 2.34fr min-content 1fr;
+      grid-template-rows: 1fr min-content 1fr;
+      align-items: center;
   }
 }
 
 @media (min-width: 1024px) {
   .header {
       display: grid;
-      grid-template-rows: 2.63fr min-content 1fr;
+      grid-template-rows: 1fr min-content 1fr;
+      align-items: center;
   }
 }
 
@@ -61,6 +64,7 @@
 .decorated-zone {
   position: relative;
   block-size: 100%;
+  min-block-size: 97vh;
 }
 
 @media (min-width: 768px) {
@@ -100,14 +104,11 @@
   display: flex;
   align-items: flex-end;
   justify-self: end;
-  margin: 5px 0 0;
 }
 
 @media (min-width: 768px) {
   .header__theme-menu {
-      margin: 28px 0 0;
       align-items: center;
-      padding-block-start: 29px;
   }
 }
 
@@ -135,10 +136,11 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
+  outline: 1px solid var(--accent-color-text);
 }
 
 .header__theme-menu-button {
-  padding: 1.5px 13px;
+  padding: 3px 13px;
   line-height: 18px;
   color: var(--accent-color-text);
   background-color: transparent;
@@ -148,12 +150,21 @@
   transition-property: outline;
 }
 
-.header__theme-menu-button_type_dark {
-  border: var(--border-neon);
-  padding-block-start: 2px;
-  padding-inline-start: 11px;
-  padding-inline-end: 13px;
-  padding-block-end: 4px;
+.main__section {
+  display: grid;
+  gap: 20px;
+}
+
+.fish__list-container {
+  display: grid;
+  gap: 20px;
+}
+
+
+@media (min-width: 768px) {
+  .main__content-paragraf {
+    margin-block-start: 0px;
+  }
 }
 
 .header__theme-menu-item {
@@ -199,6 +210,7 @@ button:hover {
   line-height: 95.7px;
   color: var(--text-color-title);
   text-shadow: 4px 4px 0 var(--text-shadow-color);
+  align-self: self-start;
 }
 
 @media (min-width: 768px) {
@@ -219,18 +231,18 @@ button:hover {
 }
 
 .title-decor {
-  margin-block-start: 55px;
   background-color: var(--bg-pink-color);
   font-weight: 700;
   line-height: 23.4px;
   color: var(--color-text-subtitle);
   max-block-size: 117px;
+  justify-self: end;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
   .title-decor {
       max-inline-size: 364px;
-      margin-block-start: 162px;
       float: right;
   }
 }
@@ -238,11 +250,14 @@ button:hover {
 @media (min-width: 1024px) {
   .title-decor {
       max-inline-size: 491px;
-      margin-block-start: 114px;
   }
 }
 
 /* main */
+
+.main__block {
+  margin-block-start: 50px;
+}
 
 @media (min-width: 768px) {
   .main__block {
@@ -260,8 +275,9 @@ button:hover {
   font-family: var(--main-font);
   font-size: 18px;
   color: var(--accent-color-text);
-  margin-block-start: 52px;
+  margin-block-end: 21px;
 }
+
 
 @media (min-width: 768px) {
   .main__title {
@@ -306,7 +322,7 @@ button:hover {
 
 @media (min-width: 768px) {
   section:not(:first-of-type) {
-      margin-block-start: 79px;
+      margin-block-start: 80px;
   }
 }
 
@@ -315,6 +331,7 @@ button:hover {
   line-height: 23.4px;
   color: var(--accent-color-text);
   margin-block-start: 50px;
+  margin-block-end: 19px;
 }
 
 @media (min-width: 1024px) {
@@ -359,7 +376,30 @@ button:hover {
   font-family: var(--main-font);
   color: var(--color-text-subtitle);
   font-size: 18px;
-  margin-block-start: 20px;
+}
+
+.fish {
+  margin-block-start: 50px;
+}
+
+.main__subtitle-textfish {
+  margin-bottom: 10px;
+  background-color: var(--bg-pink-color);
+  font-family: var(--main-font);
+  color: var(--color-text-subtitle);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+  .main__section.concetration {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.main__content {
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -462,7 +502,7 @@ a:hover {
 }
 
 .images__section {
-  margin-block-start: 50px;
+  margin-block-start: 29px;
 }
 
 @media (min-width: 768px) {
@@ -505,13 +545,13 @@ a:hover {
 
 @media (min-width: 768px) {
   section:nth-of-type(4) {
-      margin-block-start: 80px;
+      margin-block-start: 61px;
   }
 }
 
 @media (min-width: 1024px) {
   section:nth-of-type(4) {
-      margin-block-start: 79px;
+      margin-block-start: 59px;
   }
 }
 

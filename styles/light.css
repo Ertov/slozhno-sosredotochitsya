@@ -28,3 +28,24 @@
   --display: none;
 }
 
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-font: IBM Plex Mono, sans-serif ;
+    --bg-color: #FFF1F7;
+    --bg-pink-color: #FF8DCB;
+    --text-color:  #353430;
+    --accent-color-text:  #353430;
+    --color-text-subtitle: #353430;
+    --text-color-title: #FFC2E6;
+    --bg-image: url(../images/cover-image-light.png);
+    --text-shadow-color: #FF8DCB;
+    --border-neon: 1px solid var(--accent-color-text);
+    --border-hover: 1px solid #32312D66;
+    --underline-hover: 1px solid var(--text-color);
+    --focus-line: 1px solid var(--accent-color-text);
+    --font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --font-size-dekstop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --display: none;
+  }
+}
